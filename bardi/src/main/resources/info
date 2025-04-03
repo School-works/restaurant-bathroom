@@ -1,0 +1,4 @@
+In un ristorante vi sono 2 bagni di cui uno per gli uomini e l’altro per le donne.
+Utilizzando Java, si realizzi un'applicazione concorrente nella quale ogni utente dei bagni(uomo o donna) è rappresentato da un thread ed ogni bagno come una risorsa comune.
+Poiché ogni toilette può accogliere una persona alla volta, la soluzione dovrà garantire che ogni bagno possa essere
+acceduto da un solo thread alla volta.

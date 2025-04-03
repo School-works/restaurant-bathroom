@@ -1,0 +1,17 @@
+package com.example;
+
+public class UserThread extends Thread {
+    private User user;
+    private Bathroom bathroom;
+
+    public UserThread(User user, Bathroom bathroom) {
+        this.user = user;
+        this.bathroom = bathroom;
+    }
+
+    @Override
+    public void run() {
+        bathroom.enter(user);
+        bathroom.exit(user);
+    }
+}
